@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.back{
+    background-color: rgb(180, 218, 240);
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    max-height: 80px;
+    border-radius: 70px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin: 0 10px;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+/* styles.css */
+#carouselExampleCaptions .carousel-inner {
+    height: 500px; /* Adjust the height as needed */
+}
+
+#carouselExampleCaptions .carousel-item img {
+    object-fit: cover;
+    
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 100%; 
+    object-fit: cover;
+}
+
+.technologies .card {
+    transition: transform 0.3s;
+}
+
+.technologies .card:hover {
+    transform: scale(1.05);
+}
+
+.technologies .card-img-top {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+.footer .social-media img {
+    max-width: 24px;
+}
+
+.featured .card {
+    transition: transform 0.3s;
+}
+
+.featured .card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        padding: 10px;
+    }
+
+    .technologies .card-img-top {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .carousel-caption {
+        font-size: 0.9rem;
+    }
+
+    .technologies .card-img-top {
+        height: 180px;
+    }
+
+    .featured .card-title {
+        font-size: 1rem;
+    }
+
+    .footer .social-media img {
+        max-width: 20px;
+    }
+
+    .footer .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
